@@ -89,12 +89,12 @@ body {
 
 .product-name {
     font-weight: bold;
-    font-size: 1.17em;
+    font-size: 1.05em;
 }
 
 .product-price {
     color: #666;
-    font-size: 1.17em;
+    font-size: 1.15em;
 }
 
 .quantity-control {
