@@ -1,6 +1,6 @@
 const products = [
-    { id: '1', name: 'Garrafa Água Sem Gás', price: 8.00, quantity: 0 },
-    { id: '2', name: 'Garrafa Água Com Gás', price: 8.00, quantity: 0 },
+    { id: '1', name: 'Pet Água Sem Gás', price: 8.00, quantity: 0 },
+    { id: '2', name: 'Pet Água Com Gás', price: 8.00, quantity: 0 },
     { id: '3', name: 'Lata Água Sem Gás', price: 12.00, quantity: 0 },
     { id: '4', name: 'Lata Água Com Gás', price: 12.00, quantity: 0 },
     { id: '5', name: 'Refrigerante', price: 10.00, quantity: 0 },
@@ -126,7 +126,7 @@ let total = 0;
 addedProducts.forEach(product => {
     const itemTotal = product.price * product.quantity;
     total += itemTotal;
-    message += `${product.name} - x${product.quantity}`;
+        message += `${product.name} - x${product.quantity} = R$${itemTotal.toFixed(2)}\n`;
 });
 
     message += `\n*Total: R$ ${total.toFixed(2)}*`;
