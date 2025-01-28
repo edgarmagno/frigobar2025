@@ -135,6 +135,7 @@ addedProducts.forEach(product => {
     window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
 }
 
+
 shareWhatsAppBtn.addEventListener('click', shareOnWhatsApp);
 
 renderProducts();
