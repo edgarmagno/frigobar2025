@@ -118,23 +118,62 @@ body {
 }
 
 .share-btn {
-    width: 50%;
-    padding: 13px;
-    background-color: #5CB338;
-    color: white;
-    border: none;
-    border-radius: 5px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    background-color: rgb(11, 182, 11);  /* Cor do botão */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 14px;
+    border: none;
+    position: fixed;  /* Fixando o botão na tela */
+    bottom: 30px;  /* Distância da parte inferior da tela */
+    left: 20%;  /* Centraliza horizontalmente */
+    transform: translateX(-50%);  /* Centraliza exatamente */
+    z-index: 100;  /* Garante que o botão fique por cima de outros elementos */
+    transition: background-color 0.3s ease;
 }
 
 .share-btn:hover {
-    background-color: #128C7E;
+    background-color: #3b8c3a; /* Tom mais escuro de verde no hover */
 }
+
+.share-btn svg {
+    margin-right: 8px;
+}
+
+#viewAddedItems {
+    margin-bottom: 10px; /* Espaçamento inferior para o botão "Ver Itens" */
+}
+
+.view-items-btn {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da lateral direita */
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.view-items-btn svg {
+    margin-right: 8px; /* Distância entre o ícone e o texto */
+}
+
+.view-items-btn:hover {
+    background-color: #0056b3;
+}
+
 
 .modal {
     display: none;
@@ -187,28 +226,4 @@ body {
     font-size: 16px;
 }
 
-.view-items-btn {
-    position: fixed;
-    bottom: 20px; /* Distância do fundo da tela */
-    right: 20px; /* Distância da lateral direita */
-    background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
 
-.view-items-btn svg {
-    margin-right: 8px; /* Distância entre o ícone e o texto */
-}
-
-.view-items-btn:hover {
-    background-color: #0056b3;
-}
