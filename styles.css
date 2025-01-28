@@ -24,7 +24,7 @@ body {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    font-size: 14px;
+    font-size: 1.17rem;
 }
 
 .apartment-input::placeholder {
