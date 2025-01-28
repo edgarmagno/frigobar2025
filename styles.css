@@ -1,9 +1,9 @@
 body {
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 50vh;
-    background: #102C57;
+    background: #37B5B6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,18 +11,17 @@ body {
 
 .container {
     max-width: 400px;
-    width: 100%;
+    width: 100vh;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .apartment-input {
     width: 50%;
-    align-items: center;
     padding: 13px;
     margin-bottom: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     font-size: 14px;
@@ -61,22 +60,27 @@ body {
 }
 
 .products-container {
-    background-color: white;
-    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
     padding: 15px;
     margin-bottom: 15px;
 }
 
 .products-title {
-    font-size: 16px;
+    font-size: 1.17em;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
 .product-item {
     display: flex;
+    border-radius: 10px;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    padding: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px rgba(0, 0, 0, 0.06); /* Sombra dupla para mais profundidade */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efeito de animação */
 }
 
 .product-info {
@@ -85,7 +89,7 @@ body {
 
 .product-name {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.8em;
 }
 
 .product-price {
@@ -95,19 +99,17 @@ body {
 
 .quantity-control {
     display: flex;
-    background-color: ;
     align-items: center;
     gap: 8px;
 }
 
 .quantity-btn {
     background: none;
-    color: white;
-    background-color: #153448;
+    color: #153448;
     border-radius: 50px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0;
     width: 24px;
     height: 24px;
@@ -176,7 +178,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .modal-total {
