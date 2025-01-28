@@ -186,3 +186,29 @@ body {
     text-align: right;
     font-size: 16px;
 }
+
+.view-items-btn {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da lateral direita */
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.view-items-btn svg {
+    margin-right: 8px; /* Distância entre o ícone e o texto */
+}
+
+.view-items-btn:hover {
+    background-color: #0056b3;
+}
