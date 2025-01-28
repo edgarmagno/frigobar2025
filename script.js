@@ -126,7 +126,7 @@ let total = 0;
 addedProducts.forEach(product => {
     const itemTotal = product.price * product.quantity;
     total += itemTotal;
-    message += `${product.name} - ${product.quantity}x R$ ${product.price.toFixed(2)} = R$ ${itemTotal.toFixed(2)}\n`;
+    message += `${product.name} - x${product.quantity} = R$ ${itemTotal.toFixed(2)}\n`;
 });
 
     message += `\n*Total: R$ ${total.toFixed(2)}*`;
