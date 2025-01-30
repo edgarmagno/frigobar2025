@@ -118,7 +118,7 @@ body {
 }
 
 .share-btn {
-    display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     background-color: rgb(11, 182, 11);  /* Cor do botão */
@@ -130,7 +130,6 @@ body {
     border: none;
     position: fixed;  /* Fixando o botão na tela */
     bottom: 30px;  /* Distância da parte inferior da tela */
-    left: 25%;  /* Centraliza horizontalmente */
     transform: translateX(-50%);  /* Centraliza exatamente */
     z-index: 100;  /* Garante que o botão fique por cima de outros elementos */
     transition: background-color 0.3s ease;
