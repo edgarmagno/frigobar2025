@@ -120,17 +120,18 @@ body {
 .share-btn {
     position: fixed;
     align-items: center;
+    bottom: 30px; /* Distância do fundo da tela */
+    left: 23%; /* Distância da lateral esquerda */
+    width: auto;
+    height:40px;
     justify-content: center;
     background-color: rgb(11, 182, 11);  /* Cor do botão */
     color: white;
     padding: 12px 20px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     border: none;
-    position: fixed;  /* Fixando o botão na tela */
-    bottom: 30px;  /* Distância da parte inferior da tela */
-    left: 25%;  /* Centraliza horizontalmente */
     transform: translateX(-50%);  /* Centraliza exatamente */
     z-index: 100;  /* Garante que o botão fique por cima de outros elementos */
     transition: background-color 0.3s ease;
@@ -154,6 +155,8 @@ body {
     right: 20px; /* Distância da lateral direita */
     background-color: #007bff;
     color: white;
+    width: auto;
+    height: 41px;
     padding: 12px 20px;
     border-radius: 30px;
     border: none;
